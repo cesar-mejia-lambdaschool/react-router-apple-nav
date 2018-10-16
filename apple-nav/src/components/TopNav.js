@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 class TopNav extends React.Component {
   state = {
@@ -45,16 +45,16 @@ class TopNav extends React.Component {
             id='hamburger'
             className='fas fa-bars fa-2x'
           />
-          <Link id='apple-link' to='/'>
+          <NavLink id='apple-link' to='/'>
             <i id='apple' className='fab fa-apple fa-2x' />
-          </Link>
-          <Link to='/mac'>Mac</Link>
-          <Link to='/ipad'>iPad</Link>
-          <Link to='/iphone'>iPhone</Link>
-          <Link to='/watch'>Watch</Link>
-          <Link to='/tv'>TV</Link>
-          <Link to='/music'>Music</Link>
-          <Link to='/support'>Support</Link>
+          </NavLink>
+          <NavLink to='/mac'>Mac</NavLink>
+          <NavLink to='/ipad'>iPad</NavLink>
+          <NavLink to='/iphone'>iPhone</NavLink>
+          <NavLink to='/watch'>Watch</NavLink>
+          <NavLink to='/tv'>TV</NavLink>
+          <NavLink to='/music'>Music</NavLink>
+          <NavLink to='/support'>Support</NavLink>
           <svg
             id='search'
             xmlns='http://www.w3.org/2000/svg'
@@ -95,9 +95,9 @@ class TopNav extends React.Component {
           class='fas fa-times fa-2x'
         />
         <nav className='nav-expanded'>
-          <Link id='apple-link-expanded' to='/'>
+          <NavLink id='apple-NavLink-expanded' to='/'>
             <i id='expanded-apple' className='fab fa-apple fa-2x' />
-          </Link>
+          </NavLink>
         </nav>
         <div className='expanded-menu'>
           <input
@@ -106,13 +106,13 @@ class TopNav extends React.Component {
             placeholder='Search apple.com'
           />
           <ul>
-            <Link to='/mac'>Mac</Link>
-            <Link to='/ipad'>iPad</Link>
-            <Link to='/iphone'>iPhone</Link>
-            <Link to='/watch'>Watch</Link>
-            <Link to='/tv'>TV</Link>
-            <Link to='/music'>Music</Link>
-            <Link to='/support'>Support</Link>
+            <NavLink to='/mac'>Mac</NavLink>
+            <NavLink to='/ipad'>iPad</NavLink>
+            <NavLink to='/iphone'>iPhone</NavLink>
+            <NavLink to='/watch'>Watch</NavLink>
+            <NavLink to='/tv'>TV</NavLink>
+            <NavLink to='/music'>Music</NavLink>
+            <NavLink to='/support'>Support</NavLink>
           </ul>
         </div>
       </header>
