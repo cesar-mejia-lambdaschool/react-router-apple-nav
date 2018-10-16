@@ -1,30 +1,30 @@
-import React, { Component } from 'react';
-import { Route } from 'react-router-dom';
-import './App.css';
-import TopNav from './components/TopNav';
-import Home from './components/Home';
-import Mac from './components/products/Mac';
-import IPad from './components/products/iPad';
-import IPhone from './components/products/iPhone';
-import Watch from './components/products/Watch';
-import TV from './components/products/TV';
-import Music from './components/products/Music';
+import React, { Component } from 'react'
+import { Route } from 'react-router-dom'
+import TopNav from './components/TopNav'
+import './App.css'
 
+import { routes } from './routes'
 class App extends Component {
-  render() {
+  setupRoutes = routes => {
+    return Object.keys(routes).map(
+      (key, index) =>
+        (key === 'Home'
+          ? <Route key={index} exact path='/' component={routes[key]} />
+          : <Route
+            key={index}
+            path={`/${key.toLowerCase()}`}
+            component={routes[key]}
+          />)
+    )
+  }
+  render () {
     return (
-      <div className="App">
+      <div className='App'>
         <TopNav />
-        <Route exact path="/" component={Home}/>
-        <Route path="/mac" component={Mac}/>
-        <Route path="/ipad" component={IPad}/>
-        <Route path="/iphone" component={IPhone}/>
-        <Route path="/watch" component={Watch}/>
-        <Route path="/tv" component={TV}/>
-        <Route path="/music" component={Music}/>
+        {this.setupRoutes(routes)}
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App
