@@ -4,16 +4,24 @@ import TopNav from './components/TopNav'
 import './App.css'
 
 import { routes } from './routes'
+
 class App extends Component {
+  // * setupRoutes passes the butter
+  // todo: Make it prettier, more readable, add more muchness
   setupRoutes = routes => {
     return Object.keys(routes).map(
       (key, index) =>
         (key === 'Home'
-          ? <Route key={index} exact path='/' component={routes[key]} />
+          ? <Route
+            key={index}
+            exact
+            path='/'
+            render={props => React.createElement(key, { ...props }, null)}
+          />
           : <Route
             key={index}
             path={`/${key.toLowerCase()}`}
-            component={routes[key]}
+            render={props => React.createElement(key, { ...props }, null)}
           />)
     )
   }
