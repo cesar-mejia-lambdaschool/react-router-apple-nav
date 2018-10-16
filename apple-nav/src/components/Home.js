@@ -15,7 +15,7 @@ const Home = () => {
           <Link to='learn-more'>Learn more &gt;</Link>
           <Link to='store/iphone'>Buy &gt;</Link>
         </div>
-        <div className='{srcs} alt='iphonexs photo' />
+        <div className='cta-image' alt='iphonexs photo' />
       </section>
     </Fragment>
   )
