@@ -1,6 +1,11 @@
+h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+
 header {
-  background: #323232;
-  height: 48px;
+  background: #000;
+  height: 44px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -34,15 +39,16 @@ i {
 }
 
 .subnav {
-  height: 120px;
+  padding: 12px 0;
+  height: 92px;
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row nowrap;
   justify-content: center;
   justify-items: center;
 }
 
 .mac {
-  background: #141414;
+  background: rgb(20, 20, 20);
   color: white;
 }
 
@@ -85,6 +91,7 @@ i {
 
 .product {
   display: flex;
+  position: relative;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
@@ -98,5 +105,38 @@ i {
 .product p {
   font-size: 11px;
   width: 80px;
+  line-height: 1.09091;
   text-align: center;
-} 
+  letter-spacing: -.006em;
+}
+
+img:hover {
+  fill: red;
+}
+
+.newProduct {
+  position: absolute;
+  bottom: -15px;
+  color: #f46c0e
+}
+
+.ipadcontainer .newProduct {
+  position: absolute;
+  bottom: -15px;
+  color: #e85d00;
+}
+
+.watchcontainer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  justify-items: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.watchcontainer .newProduct {
+  position: absolute;
+  bottom: -20px;
+  color: #e85d00;
+}

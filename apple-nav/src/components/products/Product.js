@@ -1,12 +1,16 @@
-import React from 'react';
+import React from 'react'
 
-let Product = props => {
-    return( 
-        <div className='product'>
-            <img src={props.product.icon} alt={props.product.name}></img>
-            <p>{props.product.name}</p>
-        </div>
-    )
+let Product = ({ product: { icon, name, newProduct } }) => {
+  return (
+    <div className='product'>
+      {/* <object type='image/svg+xml' data={icon} alt={name} /> */}
+      <img src={icon} alt={name} className={name} />
+      <p>
+        {name}
+      </p>
+      <p className='newProduct'>{newProduct ? 'New' : null}</p>
+    </div>
+  )
 }
 
-export default Product;
+export default Product

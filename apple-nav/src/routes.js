@@ -5,6 +5,7 @@ import IPhone from './components/products/iPhone'
 import Watch from './components/products/Watch'
 import TV from './components/products/TV'
 import Music from './components/products/Music'
+import Support from './components/Support'
 
 export const routes = {
   Home,
@@ -13,5 +14,6 @@ export const routes = {
   IPhone,
   Watch,
   TV,
-  Music
+  Music,
+  Support
 }
