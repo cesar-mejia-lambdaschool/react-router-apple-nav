@@ -52,11 +52,12 @@ i {
 
 .subnav {
   padding: 12px 0;
-  height: 92px;
+  height: 100%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   justify-items: center;
+  overflow: hidden;
 }
 
 .mac {
