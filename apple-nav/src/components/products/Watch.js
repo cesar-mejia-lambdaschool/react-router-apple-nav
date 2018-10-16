@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { TweenMax } from 'gsap/TweenMax'
+import {TweenMax} from 'gsap/TweenMax'
 
 import watchData from '../data/watchData'
 import Product from './Product'

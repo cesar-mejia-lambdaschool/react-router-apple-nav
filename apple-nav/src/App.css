@@ -10,7 +10,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 1s ease-in;
+  transition: all 0.5s ease-out;
 }
 
 .header-light {
@@ -20,7 +20,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 1s ease-in;
+  transition: all 0.5s ease-out;
 }
 
 nav {

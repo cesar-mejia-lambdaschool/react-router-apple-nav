@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { TweenLite } from 'gsap/TweenLite'
+import {TweenMax} from 'gsap/TweenMax'
 
 import musicData from '../data/musicData'
 import Product from './Product'
@@ -12,7 +12,7 @@ class Music extends Component {
 
   componentDidMount () {
     const node = this.container.current
-    TweenLite.from(node, 1, { x: 300, autoAlpha: 0 })
+    TweenMax.from(node, 1, { x: 300, autoAlpha: 0 })
   }
   render () {
     return (

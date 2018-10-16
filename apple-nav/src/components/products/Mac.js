@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
-import { TweenLite } from 'gsap/TweenLite'
+import {TweenMax} from 'gsap/TweenMax'
 
 import macData from '../data/macData'
 import Product from './Product'
+
 class Mac extends Component {
   constructor (props) {
     super(props)
@@ -11,7 +12,7 @@ class Mac extends Component {
 
   componentDidMount () {
     const node = this.container.current
-    TweenLite.from(node, 1, { x: 300, autoAlpha: 0 })
+    TweenMax.from(node, 1, { x: 300, autoAlpha: 0 })
   }
   render () {
     return (

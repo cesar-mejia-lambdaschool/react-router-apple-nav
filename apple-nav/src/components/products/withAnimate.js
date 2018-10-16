@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { TweenMax } from 'gsap/TweenMax'
 
 const withAnimate = WrappedComponent => {
   return class extends Component {
