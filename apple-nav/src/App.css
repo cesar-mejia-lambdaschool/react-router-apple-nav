@@ -249,3 +249,61 @@ img:hover {
     width: 80%
   }
 }
+
+.visuallyhidden {
+  position: absolute;
+  padding: 0;
+  border: 0;
+  font-size: 3rem;
+  line-height: 1.07143;
+  font-weight: 600;
+  letter-spacing: -.005em;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  text-align: center;
+  color: white;
+  pointer-events: none;
+  text-align: center
+}
+
+h2 {
+  text-align: center;
+  position: relative;
+}
+
+.cta-heading {
+  text-align: center;
+}
+
+.cta-sub-heading {
+  text-align: center;
+}
+
+.iphone-xs {
+  background-image: url('./images/hero-iphone-xs_large.jpg');
+  height: 253px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: center;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 40%;
+}
+
+.cta {
+  height: 690px;
+  width: 100%;
+  background-color: black;
+  position: relative;
+  margin: -10px 0 0 0;
+}
+
+.cta-container {
+  position: absolute;
+  height: 690px;
+  width: 100%;
+  outline: 2px solid blue;
+}

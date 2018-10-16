@@ -85,7 +85,10 @@ class TopNav extends React.Component {
   }
   renderExpandedNav = () => {
     return (
-      <header id='header-expanded'>
+      <header
+        id='header-expanded'
+        onClick={() => this.setState({ isMenuActive: false })}
+      >
         <i
           id='hamburger-expanded'
           onClick={this.handleClick}
@@ -102,7 +105,7 @@ class TopNav extends React.Component {
             type='text'
             placeholder='Search apple.com'
           />
-          <ul onClick={() => this.setState({ isMenuActive: false })}>
+          <ul>
             <Link to='/mac'>Mac</Link>
             <Link to='/ipad'>iPad</Link>
             <Link to='/iphone'>iPhone</Link>

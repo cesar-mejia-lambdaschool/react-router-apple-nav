@@ -13,8 +13,8 @@ class App extends Component {
           : <Route
             key={index}
             path={`/${key.toLowerCase()}`}
-            component={routes[key]}
-          />)
+            render={props => (routes[key].props = { ...props })}
+            />)
     )
   }
   render () {
