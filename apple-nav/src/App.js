@@ -26,7 +26,7 @@ class App extends Component {
     )
   }
   render () {
-  ``  console.log('yo')
+    console.log('yo')
     return (
       <div className='App'>
         <TopNav />
