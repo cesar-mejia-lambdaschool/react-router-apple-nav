@@ -4,17 +4,20 @@ import { NavLink } from 'react-router-dom'
 const Home = props => {
   return (
     <section className='cta'>
-      <div className='cta-container'>
-        <h1 className='cta-heading'>
-          iPhone X<span>s</span>
+      <div className='cta-heading-container'>
+        <h1 className='cta-heading-main'>
+          iPhone X<div id='styleS'>s</div>
         </h1>
-        <h2 className='cta-sub-heading'>Welcome to the big screens.</h2>
+        <h2 className='cta-heading-sub'>Welcome to the big screens.</h2>
+        <div className='cta-links-container'>
+          <NavLink className='cta-link' to='learn-more'>
+            Learn more &gt;
+          </NavLink>
+          <NavLink className='cta-link' to='store/iphone'>Buy &gt;</NavLink>
+        </div>
       </div>
-      <div>
-        <NavLink to='learn-more'>Learn more &gt;</NavLink>
-        <NavLink to='store/iphone'>Buy &gt;</NavLink>
-      </div>
-      <div className='cta-img' alt='cta-image' />
+
+      <div className='cta-image' alt='cta-image' />
     </section>
   )
 }

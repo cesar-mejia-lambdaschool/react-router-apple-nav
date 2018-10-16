@@ -18,12 +18,14 @@ class App extends Component {
             key={index}
             exact
             path='/'
-            render={props => React.createElement(key, { ...props }, null)}
+            // render={props => React.createElement(key, { props })}
+            component={routes[key]}
           />
           : <Route
             key={index}
             path={`/${key.toLowerCase()}`}
-            render={props => React.createElement(key, { ...props }, null)}
+            component={routes[key]}
+            // render={props => React.createElement(key, props)}
           />)
     )
   }
