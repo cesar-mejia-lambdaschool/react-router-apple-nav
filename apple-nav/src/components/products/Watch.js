@@ -1,18 +1,10 @@
-import React, { Component } from 'react'
-import withAnimate from './withAnimate'
+import React from 'react'
+import SubNav from './SubNav'
 import watchData from '../data/watchData'
-import Product from './Product'
 
-class Watch extends Component {
-  render () {
-    return (
-      <div className='subnav watch'>
-        <div className='watchcontainer' ref={this.props.forwardRef}>
-          {watchData.map((product, i) => <Product key={i} product={product} />)}
-        </div>
-      </div>
-    )
-  }
+const Watch = () => {
+  return (
+    <SubNav subnav='subnav watch' container='watchcontainer' data={watchData} />
+  )
 }
-
-export default withAnimate(Watch)
+export default Watch

@@ -1,18 +1,11 @@
-import React, { Component } from 'react'
-import withAnimate from './withAnimate'
+import React from 'react'
+import SubNav from './SubNav'
 import musicData from '../data/musicData'
-import Product from './Product'
 
-class Music extends Component {
-  render () {
-    return (
-      <div className='subnav ipad'>
-        <div className='iphonecontainer' ref={this.props.forwardRef}>
-          {musicData.map((product, i) => <Product key={i} product={product} />)}
-        </div>
-      </div>
-    )
-  }
+const Music = () => {
+  return (
+    <SubNav subnav='subnav ipad' container='iphonecontainer' data={musicData} />
+  )
 }
 
 export default Music

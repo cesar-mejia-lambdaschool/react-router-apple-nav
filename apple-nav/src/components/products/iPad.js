@@ -1,18 +1,11 @@
-import React, { Component } from 'react'
-import withAnimate from './withAnimate'
+import React from 'react'
+import SubNav from './SubNav'
 import ipadData from '../data/ipadData'
-import Product from './Product'
 
-class IPad extends Component {
-  render () {
-    return (
-      <div className='subnav ipad'>
-        <div className='ipadcontainer' ref={this.props.forwardRef}>
-          {ipadData.map((product, i) => <Product key={i} product={product} />)}
-        </div>
-      </div>
-    )
-  }
+const IPad = () => {
+  return (
+    <SubNav subnav='subnav ipad' container='ipadcontainer' data={ipadData} />
+  )
 }
 
-export default withAnimate(IPad)
+export default IPad
