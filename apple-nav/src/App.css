@@ -252,7 +252,8 @@ img:hover {
   }
 }
 
-.cta {
+.cta,
+.middle-content {
   min-height: 690px;
   width: 100%;
   background-color: black;
@@ -313,7 +314,7 @@ img:hover {
   margin: 0;
   color: #fff;
   height: 35px;
-  letter-spacing: .5px;
+  letter-spacing: 10px;
   font-size: 1.6rem;
   line-height: 1.14815;
   font-weight: 400;
@@ -350,4 +351,26 @@ a.cta-link {
   background-size: center;
   background-position: center;
   margin-bottom: 160px;
+}
+
+a.active {
+  color: darkgray;
+  font-weight: 700;
+}
+
+.middle-content {
+  margin-top: 12px;
+}
+
+.middle-image {
+  height: 358px;
+  width: 100%;
+  background-image: url('./images/iphone_xr_large.jpg');
+  background-repeat: no-repeat;
+  background-size: center;
+  background-position: center;
+}
+
+.pre-order {
+  color: darkgrey;
 }
