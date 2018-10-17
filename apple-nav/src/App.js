@@ -1,19 +1,16 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import { Route } from 'react-router-dom'
 import TopNav from './components/TopNav'
-import './App.css'
-
 import { routes } from './routes'
+import './App.css'
 
 class App extends Component {
   // * setupRoutes passes the butter
   // todo: Make it prettier, more readable, add more muchness
   setupRoutes = routes => {
-    console.log('routes', routes)
-
     return Object.keys(routes).map(
       (key, index) =>
-        (key === 'Home'
+        (key === 'Home' || key === 'Layout'
           ? <Route
             key={index}
             exact
@@ -28,12 +25,11 @@ class App extends Component {
     )
   }
   render () {
-    console.log('yo')
     return (
-      <div className='App'>
+      <Fragment>
         <TopNav />
         {this.setupRoutes(routes)}
-      </div>
+      </Fragment>
     )
   }
 }

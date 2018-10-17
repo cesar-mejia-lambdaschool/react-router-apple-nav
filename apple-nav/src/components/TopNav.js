@@ -14,20 +14,20 @@ class TopNav extends React.Component {
   }
 
   checkDesktop = () => {
-    console.log(window.innerWidth, this.state.isDesktop)
-    if (window.innerWidth > 767) {
+    if (window.innerWidth >= 768 && !this.state.isDesktop) {
       return this.setState({ isDesktop: true, isMenuActive: false })
     }
-    this.setState({ isDesktop: false })
+    if (this.state.isDesktop) this.setState({ isDesktop: false })
   }
 
   componentDidMount () {
     window.addEventListener('resize', this.checkDesktop)
-    if (window.innerWidth > 767) {
-      return this.setState({ isDesktop: true, isMenuActive: false })
+    if (window.innerWidth >= 768) {
+      return this.setState({ isDesktop: true })
     }
     this.setState({ isDesktop: false })
   }
+
   renderCollapsedNav = () => {
     return (
       <header

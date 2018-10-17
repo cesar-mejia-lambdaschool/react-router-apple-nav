@@ -17,8 +17,7 @@ const Home = props => {
             <NavLink className='cta-link' to='store/iphone'>Buy &gt;</NavLink>
           </div>
         </div>
-
-        <div className='cta-image' alt='cta-image' />
+        <div className='cta-image' alt='iPhoneXS' />
       </section>
       <section className='middle-content'>
         <div className='cta-heading-container'>
@@ -30,8 +29,7 @@ const Home = props => {
             <small className='pre-order'>Pre-order 10.19</small>
           </h3>
         </div>
-
-        <div className='middle-image' alt='cta-image' />
+        <div className='middle-image' alt='iPhoneXR' />
       </section>
     </Fragment>
   )
